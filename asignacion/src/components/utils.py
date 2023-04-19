@@ -25,7 +25,6 @@ def asignacion(df, value, dfI):
 
         dfIFilter = dfI.loc[dfI['Grupo'] == grupo]
         dfITotal = dfIFilter.count()['Grupo']
-
         operation = math.floor(dfTotal / dfITotal)
 
         extra = dfTotal % dfITotal

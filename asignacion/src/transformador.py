@@ -52,4 +52,4 @@ def asignarGrupo(columns,grupos):
         
         df.to_excel(ruta + sep + 'res' + sep + 'resultado.xlsx',index=False)
          
-asignarGrupo(columns=['Nombre Ente Legal','Nombre Demandado','Filial'], grupos=['Genérico','Especiales','Mixtos','Colpensiones','Filiales'])
+asignarGrupo(columns=['Nombre Ente Legal','Nombre Demandado','Filial'], grupos=['Genérico','Especiales','Mixtos','Colpensiones','Filiales','Masivo'])
