@@ -1,0 +1,8 @@
+TODO 1:
+    pendiente clasificar caso especial cuando el nit de colpensiones se encuentre en la columna 
+    "Nombre Demandado"
+
+TODO 2:
+    Pendiente validar archivo de especiales de la ruta V para verificar si un cliente del archivo 
+    esta como demandado para ponerlo como especial.
+

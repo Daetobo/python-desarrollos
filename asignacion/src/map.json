@@ -1,0 +1,14 @@
+{
+    "Filial": {
+        "(?=.*MIXTO.*)": "Mixtos",
+        "^((?!COLOMBIA).)*$": "Filiales"
+    },
+    "Nombre Ente Legal": {
+        "(?=.*SENA.*)": "Especiales",
+        "(?=.*SOCIEDADES.*)": "Especiales",
+        "(?=.*FAMILIA.*)": "Especiales"
+    },
+    "Nombre Demandado": {
+        "(?=.*COLPENSION.*)": "Colpensiones"
+    }
+}
