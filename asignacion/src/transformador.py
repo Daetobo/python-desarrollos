@@ -42,12 +42,14 @@ def asignarGrupo(columns,grupos):
             Asignación de Grupos
         '''
         df['countGroup'] = df.groupby('group')['group'].transform('count')
+        
         query = """SELECT Usuario_Red, Grupo
                     FROM Investigadores"""
         datos = cn.consulta(query)
 
         df = utils.asignacion(df= df,value= grupos,dfI= datos)
-        
+        df = df.astype('str')
+        df['llave_proceso'] = df['# RUB'] + df['Identificacion del Demandado']  + df['Número De Radicado'] + df['Filial']
         insert = cn.insert(df)
         
         df.to_excel(ruta + sep + 'res' + sep + 'resultado.xlsx',index=False)
